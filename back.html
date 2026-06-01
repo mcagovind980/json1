@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// function count()
+// {
+//     let coun=0;
+//     return function()
+    
+//     {
+//     coun++;
+// return coun++;
+// }
+// }
+// let c=count();
+// let b=count();
+// console.log(c())
+// console.log(c())
+// console.log(c())
+// console.log(b())
+// console.log(b())
+// console.log(b())
+
+// create a increment and decrement 
+// function cre()
+// {
+//     let count=0;
+//     return{
+//     increment()
+//     {
+//         return ++count;
+//     },
+//   decrment()
+//     {
+//         return --count;
+//     },
+// getValue()
+// {
+//     return count;
+// }
+// };
+// }
+// const counter=cre();
+// console.log(counter.getValue());
+// console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.decrment());
+// console.log(counter.decrment());
+// console.log(counter.decrment());
+
+
+
+//create a function that can execute only once
+// function demo()
+// {
+//     console.log("hello");
+// }
+// demo()
+
+
+// count how many times function has been called
+// let count=0;
+// function cont()
+// {
+
+//    return count++;
+// }
+// console.log(cont());
+
+
+// create a bank account with deposit and withdrow while keeping balance 
+
+
+//  function BankAccount() 
+//     {
+//      let balance = 0; 
+//       return {
+//         deposit(am) 
+//         {
+//          if (am > 0) {
+//                  balance += am;
+//                  return balance;
+//              }
+//         return "Invalid deposit amount";
+//            } ,
+
+//         withdraw(am)
+//           {
+//              if (am<= 0) {
+//                  return "Invalid withdrawal amount";
+//              }
+
+//              if (am > balance) {
+//                  return "Insufficient funds";
+//              }
+
+//              balance -= am;
+//              return balance;
+//          },
+//        getBalance()
+//           {
+//              return balance;
+//           }
+//      };
+//  }
+
+//  const account = BankAccount(1000);
+//  console.log(account.getBalance()); 
+//  console.log(account.deposit(500)); 
+//  console.log(account.withdraw(200)); 
+//  console.log(account.getBalance());
+
+
+
+
+// function bank()
+// {
+// let balance=0;
+// return {
+// deposit(am)
+// {
+//     if(am>=0)
+// {
+// balance+=am;
+// return balance;
+// }
+// return "invalid deposit amount"
+// },
+// withdrowl(am)
+// {
+//     if(am>=0)
+// {
+// return "insufficeint fund";
+// }
+// if(am>=balance)
+// {
+//     return " fund";
+// }
+// balance-=am;
+// return balance;
+// },
+
+// getBalance()
+// {
+//    return balance;
+// }
+// }
+// }
+
+// let k=bank(1000)
+//  console.log(k.getBalance()); 
+//  console.log(k.deposit(200));
+//  console.log(k.withdrowl(10));
+//  console.log(k.getBalance());
+
+
+
+
+
+
+
+
+  // predect the output 
+  //   function sum(a,b,c)
+  //   {
+  //     return a+b+c;
+  //   }
+  //   console.log(sum.apply(null,[1,2,3]))
+ 
+
+ //   const obj1={
+  //    name:"rahul"
+ //   }
+ //   function test()
+ //   {
+ //  console.log(this.name);
+ //   }
+ // test.bind(obj1);
+
+
+  //  console.log();
+  //  const obj = {
+  //  name: "rahul"
+  //  };
+
+
+// function test() {
+// console.log(this.name);
+// }
+// test.call({ name: "Amit" }); 
+
+
+// fn.call
+// (
+//     {name:"Amit"}
+// )
+
+
+
+//  const person = {
+//  name: "Rahul",
+//   greet() 
+//  {
+//    console.log(`Hello, ${this.name}`);
+//  }
+//  };
+// const greetFn = person.greet;
+// greetFn();
+// const boundGreet = person.greet.bind(person);
+// boundGreet();
+
+// const person={
+//  name:"Rahul",
+//  greet()
+//     {
+//     console.log(`hellos,${this.name}`);
+//     }
+//   };
+//  function k()
+//   {
+//  console.log("helloe");
+//   }
+//  const bound=k.bind(person);
+//  bound();
+
+// const person={
+//  name:"ram",
+//   greet()
+//    {
+//    console.log(`Helloe,${this.name}`);
+//    } 
+//    };
+//   function k()
+//   {
+//    console.log("Hello Ram");
+//    }
+// let w=person.greet.bind(k());
+// console.log(w);
+// w();
+
+// let count=0;
+// function k()
+// {
+// return greet()
+// return  incre()
+// {
+// count++
+// }
+// }
+// incre();
+// console.log(count);
+
+// function i()
+// {
+//     return {
+// in()
+// {
+//     console.log("hello");
+    
+// },
+
+// k()
+// {
+//     console.log("ram");
+    
+// },
+//  k()
+// {
+//     console.log("ram");
+// }
+// }
+// }
+// let p=i();
+// console.log(p.k(),p.in(),p.k());
+
+//   document.addEventListener("mouse move",function(event)
+//   {
+//   document.getElementById("demo").innerHTML="X:" + event.clientX + "Y:" + event.clientY;
+//   } );
+
+// document.addEventListener("mousemove", function (event) {
+//   document.getElementById("demo").innerHTML =
+//   "X: " + event.clientX + " Y: " + event.clientY;
+// });
+
+setInterval(showTime,1000);
+function show()
+{
+    const d=new Date();
+
+}
+document.getElementById("clock").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+
+</script>
+<!-- <p id="demo"> Move the Mouse in this Window</p> -->
+
+</body>
+</html>
