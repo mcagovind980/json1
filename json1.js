@@ -412,9 +412,21 @@
 // getData()
 
 
-// async function getData() {
-//   let response=await fetch("https://jsonplaceholder.typicode.com/users")
-//   let result =await response.json()
-//   console.log(result);
-// }
-// getData();
+ // async function getData()
+
+  //  {
+
+  //   let response=await fetch("https://jsonplaceholder.typicode.com/users")
+  //   let result =await response.json()
+  //   console.log(result);
+  
+  //   }
+ 
+  // getData();
+
+
+  
+
+
+
+
